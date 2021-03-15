@@ -1,0 +1,124 @@
+/* Variables */
+$font-logo: 'Caveat', cursive;
+$font-text: 'Merriweather', serif;
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.row{
+    padding-right: 0;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}
+/* Header */
+header{
+    div{
+        position: relative;
+        top: 50px;
+        font-size: 50px;
+        font-weight: 700;
+        text-align: left;
+        line-height: 0.7;
+    }
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+}
+nav{
+    .logo{
+        font-size: 80px;
+        text-align: left;
+        font-family: $font-logo;
+        margin-top: 15px;
+        line-height: 1;
+    }
+    a{
+        color: white;
+        transition: 1s;
+    }
+    a:hover{
+        color: gold;
+        transition: 1s;
+    }
+    
+}
+
+.navigation .menu{
+    li{
+        list-style-type: none;
+        padding: 10px;
+        position: relative;
+    }
+    a{
+        color: white;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+    a:hover{
+        opacity: 0.6;
+    }
+    font-size: 18px;
+    padding-inline-start: 0;
+    margin-top: 35px;
+}
+.navigation .about-us{
+    li{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    a{
+        color: black;
+    }
+    a:hover{
+        opacity: 1;
+    }
+    position: absolute;
+    padding-inline-start: 0;
+    background-color: white;
+    width: 150px;
+    border-radius: 5px;
+    margin-left: -50px;
+    display: none;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+.navigation li:hover .about-us{
+    display: block;
+}
+.navigation .about-us li:hover{
+    background-color: lightgrey;
+    border-radius: 5px;
+    
+}
+/* Our-Values */
+.values{
+    div{
+        box-shadow: -1px 1px 6px 3px rgba(0,0,0,0.41);
+        flex: 30% 0 0;
+        text-align: left;
+        padding: 15px;
+        padding-left: 25px;
+        font-weight: 550;
+    }
+    justify-content: space-between;
+    margin-top: 20px;
+}

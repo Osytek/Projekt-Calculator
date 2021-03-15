@@ -1,0 +1,138 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Merriweather", serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.row {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background-image: url(/images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  color: white;
+}
+
+header div {
+  position: relative;
+  top: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 0.7;
+}
+
+nav .logo {
+  font-size: 80px;
+  text-align: left;
+  font-family: "Caveat", cursive;
+  margin-top: 15px;
+  line-height: 1;
+}
+
+nav a {
+  color: white;
+  transition: 1s;
+}
+
+nav a:hover {
+  color: gold;
+  transition: 1s;
+}
+
+.navigation .menu {
+  font-size: 18px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin-top: 35px;
+}
+
+.navigation .menu li {
+  list-style-type: none;
+  padding: 10px;
+  position: relative;
+}
+
+.navigation .menu a {
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.navigation .menu a:hover {
+  opacity: 0.6;
+}
+
+.navigation .about-us {
+  position: absolute;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  background-color: white;
+  width: 150px;
+  border-radius: 5px;
+  margin-left: -50px;
+  display: none;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+.navigation .about-us li {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navigation .about-us a {
+  color: black;
+}
+
+.navigation .about-us a:hover {
+  opacity: 1;
+}
+
+.navigation li:hover .about-us {
+  display: block;
+}
+
+.navigation .about-us li:hover {
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+
+/* Our-Values */
+.values {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.values div {
+  box-shadow: -1px 1px 6px 3px rgba(0, 0, 0, 0.41);
+  flex: 30% 0 0;
+  text-align: left;
+  padding: 15px;
+  padding-left: 25px;
+  font-weight: 550;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBR0EsV0FBQTtBQUVBO0VBQ0ksc0JBQXNCO0FDRjFCOztBREtBO0VBQ0ksZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixrQ0FWNkI7QUNRakM7O0FES0E7RUFDSSxpQkFBaUI7RUFDakIsY0FBYztFQUNkLGVBQWU7RUFDZixnQkFBZ0I7QUNGcEI7O0FESUE7RUFDSSxnQkFBZ0I7RUFDaEIsZUFBZTtBQ0RuQjs7QURHQTtFQUNJLHFCQUFxQjtBQ0F6Qjs7QURFQSxXQUFBO0FBQ0E7RUFTSSx5Q0FBeUM7RUFDekMsc0JBQXNCO0VBQ3RCLDJCQUEyQjtFQUMzQixhQUFhO0VBQ2IsWUFBWTtBQ1BoQjs7QUROQTtFQUVRLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FDUXhCOztBREFBO0VBRVEsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQiw4QkEvQ3FCO0VBZ0RyQixnQkFBZ0I7RUFDaEIsY0FBYztBQ0V0Qjs7QURSQTtFQVNRLFlBQVk7RUFDWixjQUFjO0FDR3RCOztBRGJBO0VBYVEsV0FBVztFQUNYLGNBQWM7QUNJdEI7O0FEQ0E7RUFjSSxlQUFlO0VBQ2Ysd0JBQXVCO1VBQXZCLHVCQUF1QjtFQUN2QixnQkFBZ0I7QUNYcEI7O0FETEE7RUFFUSxxQkFBcUI7RUFDckIsYUFBYTtFQUNiLGtCQUFrQjtBQ08xQjs7QURYQTtFQU9RLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FDUXhCOztBRGpCQTtFQVlRLFlBQVk7QUNTcEI7O0FESEE7RUFZSSxrQkFBa0I7RUFDbEIsd0JBQXVCO1VBQXZCLHVCQUF1QjtFQUN2Qix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLGVBQWU7RUFDZixZQUFZO0FDTGhCOztBRGZBO0VBRVEsa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixvQkFBb0I7QUNpQjVCOztBRHJCQTtFQU9RLFlBQVk7QUNrQnBCOztBRHpCQTtFQVVRLFVBQVU7QUNtQmxCOztBRFBBO0VBQ0ksY0FBYztBQ1VsQjs7QURSQTtFQUNJLDJCQUEyQjtFQUMzQixrQkFBa0I7QUNXdEI7O0FEUkEsZUFBQTtBQUNBO0VBU0ksOEJBQThCO0VBQzlCLGdCQUFnQjtBQ0dwQjs7QURiQTtFQUVRLGdEQUE2QztFQUM3QyxhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsZ0JBQWdCO0FDZXhCIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
