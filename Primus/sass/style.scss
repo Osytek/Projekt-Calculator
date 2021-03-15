@@ -11,6 +11,8 @@ body{
     font-size: 16px;
     line-height: 1.7;
     font-family: $font-text;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -121,4 +123,30 @@ nav{
     }
     justify-content: space-between;
     margin-top: 20px;
+}
+/* Description */
+.description{
+    div{
+        margin-top: 70px;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    ul{
+        margin-bottom: 50px;
+    }
+}
+/* footer */
+footer{
+    background-image: url('/images/footer.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.footer-box{
+    div{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: white;
+    }
+    justify-content: space-between;
 }
