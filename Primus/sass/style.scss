@@ -145,18 +145,41 @@ footer{
     opacity: 0;
     &.active{
         opacity: 1;
+        z-index: 1;
     }
 }
 .titles{
     list-style-type: none;
-    justify-content: center;
+    justify-content: space-around;
     a{
         color: black;
-        border: 1px solid black;
         text-align: center;
-        font-weight: 700;
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    a:hover{
+        background-color:#80513d;
+        color: white;
+        font-weight: 500;
+        opacity: 0.5;
+        border: none;
+        transition: 0.5s;
     }
 }
 .section-title{
     margin-top: 50px;
+}
+
+.titles{
+    .active{
+        background-color: #80513d;
+        color: white;
+        font-weight: 500;
+        opacity: 0.5;
+        border: none;
+    }
 }
