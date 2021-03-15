@@ -136,26 +136,24 @@ footer{
     margin-bottom: 50px;
 }
 /* Offer */
-.offer{
-    ul{
-        justify-content: center;
-        margin-bottom: 0;
+.posts{
+    position: relative;
+    height: 300px;
+}
+.post{
+    position: absolute;
+    opacity: 0;
+    &.active{
+        opacity: 1;
     }
-    li{
-        list-style-type: none;
-    }
+}
+.titles{
+    list-style-type: none;
+    justify-content: center;
     a{
         color: black;
-        border: 1px black solid;
+        border: 1px solid black;
         text-align: center;
         font-weight: 700;
-    }
-    div{
-        margin-top: 0;
-        display: none;
-    }
-    .active{
-        display: block;
-        margin-bottom: 50px;
     }
 }
